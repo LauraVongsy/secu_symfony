@@ -7,7 +7,7 @@ describe('Test utilisateur', () => {
         cy.get('#register_password_first').clear().type("1234")
         cy.get('#register_password_second').clear().type("1234")
         cy.get('#register_Ajouter').click()
-        cy.get('strong').should("contain", "Le compte laura3@test.com a été ajouté en BDD")
+        cy.get('strong').should("contain", "Le compte : laura3@test.com a été ajouté en BDD")
     })
 
 })
@@ -20,7 +20,7 @@ describe('Test utilisateur', () => {
         cy.get('#register_password_first').clear().type("1234")
         cy.get('#register_password_second').clear().type("1234")
         cy.get('#register_Ajouter').click()
-        cy.get('strong').should("contain", "Le compte laura3@test.com existe déja")
+        cy.get('strong').should("contain", "Le compte : laura3@test.com existe déja")
     })
 
 })
